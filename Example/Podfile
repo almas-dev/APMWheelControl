@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'APMWheelControl_Example', :exclusive => true do
+  pod 'APMWheelControl', :path => '../'
+end
+
+target 'APMWheelControl_Tests', :exclusive => true do
+  pod 'APMWheelControl', :path => '../'
+
+  
+end
