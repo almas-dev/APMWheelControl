@@ -1,0 +1,14 @@
+PODS:
+  - APMWheelControl (0.1.0)
+
+DEPENDENCIES:
+  - APMWheelControl (from `../`)
+
+EXTERNAL SOURCES:
+  APMWheelControl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  APMWheelControl: 478ae685143d59157b4713092e4453c26c75a629
+
+COCOAPODS: 0.39.0
