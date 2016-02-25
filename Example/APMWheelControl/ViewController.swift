@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import APMWheelControl
 
 class ViewController: UIViewController {
 
@@ -14,6 +15,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.orangeColor()
+
+        let wheelControl = APMWheelControl(frame: CGRectMake(150, 300, 150, 150))
+        wheelControl.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(wheelControl)
     }
     
 }
