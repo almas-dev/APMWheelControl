@@ -42,7 +42,7 @@ public class APMWheelControl: UIControl {
         CGContextRestoreGState(context)
 
         let sectorSize: CGFloat = 360 / CGFloat(numberOfSegments)
-        var sectorDegrees = sectorSize
+        var sectorDegrees: CGFloat = 180
         let center = CGPointMake(rect.width / 2, rect.height / 2)
         for i in 0..<numberOfSegments {
             let sector = array[i]
