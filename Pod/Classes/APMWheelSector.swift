@@ -7,10 +7,16 @@ import UIKit
 class APMWheelSector: UIView {
 
     var color: UIColor?
+    var label: String? {
+        didSet {
+            sectorLabel.text = label
+        }
+    }
     let numberOfSegments: CGFloat = 5
     let lRadius: CGFloat
     let sRadius: CGFloat = 0
     var arc = UIBezierPath()
+    private let sectorLabel = UILabel()
 
     required init(coder aDecoder: NSCoder) {
         fatalError("NSCoding not supported")
@@ -41,6 +47,12 @@ class APMWheelSector: UIView {
 
         super.init(frame: frame)
         backgroundColor = UIColor.clearColor()
+
+        sectorLabel.frame = CGRectMake(0, 0, frame.width, frame.height - 10)
+        sectorLabel.textColor = UIColor.cyanColor()
+        sectorLabel.textAlignment = .Center
+        sectorLabel.transform = CGAffineTransformMakeRotation(degreesToRadians(90))
+        addSubview(sectorLabel)
     }
 
     override func drawRect(rect: CGRect) {

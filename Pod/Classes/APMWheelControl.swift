@@ -24,6 +24,7 @@ public class APMWheelControl: UIControl {
         for i in 0..<numberOfSegments {
             let sector = APMWheelSector(radius: frame.width / 2)
             sector.color = UIColor(white: 0.15 * CGFloat(i + 1), alpha: 1.0)
+            sector.label = "Open\(i)"
             array.append(sector)
         }
     }
