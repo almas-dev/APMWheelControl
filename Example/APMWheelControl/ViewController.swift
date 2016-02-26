@@ -16,6 +16,11 @@ class ViewController: UIViewController {
         
         view.backgroundColor = UIColor.orangeColor()
 
+        let label = UILabel(frame: CGRectMake(25, 365, 95, 20))
+        label.textAlignment = .Right
+        label.text = "Current >>"
+        view.addSubview(label)
+
         let wheelControl = APMWheelControl(frame: CGRectMake(150, 300, 150, 150))
         wheelControl.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(wheelControl)

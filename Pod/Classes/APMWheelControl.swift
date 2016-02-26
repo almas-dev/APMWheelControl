@@ -19,6 +19,9 @@ public class APMWheelControl: UIControl {
     override public init(frame: CGRect) {
         super.init(frame: frame)
 
+        let recognizer = APMWheelRecognizer()
+        addGestureRecognizer(recognizer)
+
         backgroundColor = UIColor.yellowColor()
 
         for i in 0..<numberOfSegments {
